@@ -997,6 +997,10 @@ export interface Nursery {
 	 */
 	noUselessUndefinedInitialization?: RuleConfiguration_for_Null;
 	/**
+	 * Disallow unknown pseudo-element selectors.
+	 */
+	noUnknownSelectorPseudoClass?: RuleConfiguration_for_Null;
+	/**
 	 * It enables the recommended rules for this group
 	 */
 	recommended?: boolean;
@@ -2013,6 +2017,7 @@ export type Category =
 	| "lint/nursery/noUnknownSelectorPseudoElement"
 	| "lint/nursery/noUnknownUnit"
 	| "lint/nursery/noUselessUndefinedInitialization"
+	| "lint/nursery/noUnknownSelectorPseudoClass"
 	| "lint/nursery/useArrayLiterals"
 	| "lint/nursery/useBiomeSuppressionComment"
 	| "lint/nursery/useConsistentBuiltinInstantiation"

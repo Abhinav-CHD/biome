@@ -1587,6 +1587,13 @@
 						{ "type": "null" }
 					]
 				},
+				"noUnknownSelectorPseudoClass": {
+					"description": "Disallow unknown pseudo-class selectors.",
+					"anyOf": [
+						{ "$ref": "#/definitions/RuleConfiguration" },
+						{ "type": "null" }
+					]
+				},
 				"recommended": {
 					"description": "It enables the recommended rules for this group",
 					"type": ["boolean", "null"]
